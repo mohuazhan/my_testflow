@@ -1,0 +1,16 @@
+pocoui
+pocounit
+uvicorn
+fastapi
+sqlalchemy
+flask
+flask_sqlalchemy
+pymysql
+mysql-connector-python
+flask_admin
+flask_babelex
+requests
+aiohttp
+nest_asyncio
+mitmproxy
+wxpy

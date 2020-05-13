@@ -1,0 +1,13 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+    <h2 align="center">系统架构图</h2>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+        <h4 align="right">开发团队：Brother Mo</h4>
+        <h5 align="right">版本：v1.0.0-2020.03</h5></li>
+        <li><a href="{{ url_for('admin_bk.logout') }}">退出</a></li>
+    </ul>
+    <div align="center">
+        <img src="{{ url_for('static', filename='img/system_design.png') }}" width="90%">
+    </div>
+{% endblock %}
