@@ -10,6 +10,11 @@ import time
 import random
 from sqlalchemy.orm import scoped_session
 
+# 加上log级别的设定，取消脚本执行过程中刷新大量的log信息
+import logging
+logger = logging.getLogger("airtest")
+logger.setLevel(logging.ERROR)
+
 # 调用了scoped_session_maker.remove()后
 # 再用scoped_session_maker()创建的session对象和之前创建的就是不同的对象了
 db = scoped_session(SessionLocal)
