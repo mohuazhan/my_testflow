@@ -14,6 +14,7 @@ class DeviceInfo(Base):
     device_id = Column(String)  # 手机设备串号
     douyin_name = Column(String)  # 当前登录的抖音号
     task_now = Column(String)  # 当前任务
+    task_pid = Column(Integer)  # 当前任务进程pid
     start_times_td = Column(Integer)  # 今天启动次数
     start_times_all = Column(Integer)  # 启动总次数
     status = Column(String)  # 状态

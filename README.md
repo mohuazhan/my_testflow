@@ -107,3 +107,4 @@ C:\Users\Administrator>pip install -e D:\auto_douyin\my-testflow -i https://pypi
 |  | 养号时poco抓取不到视频作者的抖音昵称，统一设为'未知' |
 |  | 在 /res/doc/ 下添加了测试账号文本文件 |
 |  | 新增：设定log级别，取消airtest脚本执行过程中刷新大量的log信息 |
+| v1.0.4 | 设备管理新增：当前(或最近一次)任务进程pid(字段:task_pid)，并完善终止任务功能(根据pid杀死进程) |

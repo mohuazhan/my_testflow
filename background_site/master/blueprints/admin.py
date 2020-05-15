@@ -142,6 +142,7 @@ class DeviceInfoAdmin(ModelView):
         device_id='设备串号',
         douyin_name='当前抖音号',
         task_now='当前(或最近一次)任务',
+        task_pid='当前(或最近一次)任务进程pid',
         start_times_td='今天启动任务次数',
         start_times_all='启动任务总次数',
         status='状态',

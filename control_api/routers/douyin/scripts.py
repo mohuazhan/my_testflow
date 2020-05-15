@@ -469,8 +469,6 @@ def stop_douyin(device_id):
     # 所以要在执行任务的代码加入识别不到就return
     # 如果不加return，只能等该设备的当前任务执行完，或者终止代码运行或断开USB连接
     stop_app('com.ss.android.ugc.aweme')
-    # 打开天气，随便另一个进程乱点直至停止
-    start_app('com.coloros.weather')
     db.remove()
     return
 

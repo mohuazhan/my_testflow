@@ -327,6 +327,24 @@ def insert_username(db: Session, douyin_name, account):
     db.commit()
     db.close()
 
+# 获取当前任务进程pid
+def get_task_pid(db: Session, device_id):
+    dev = db.query(DeviceInfo).filter_by(device_id=device_id).first()
+    if dev.task_pid == None:
+        return None
+    else:
+        task_pid = dev.task_pid
+        return task_pid
+
+
+# 重置当前任务进程pid
+def reset_task_pid(db: Session, device_id, task_pid):
+    dev = db.query(DeviceInfo).filter_by(device_id=device_id).first()
+    dev.task_pid = task_pid
+    db.commit()
+    db.close()
+    return True
+
 
 # 以下代码为测试示例
 # from database import SessionLocal

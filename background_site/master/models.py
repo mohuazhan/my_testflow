@@ -24,6 +24,7 @@ class DeviceInfo(db.Model):
     device_id = db.Column(db.String(50))  # 手机设备串号
     douyin_name = db.Column(db.String(50))  # 当前登录的抖音号
     task_now = db.Column(db.String(50))  # 当前任务
+    task_pid = db.Column(db.Integer)  # 当前任务进程pid
     start_times_td = db.Column(db.Integer)  # 今天启动次数
     start_times_all = db.Column(db.Integer)  # 启动总次数
     status = db.Column(db.String(50))  # 状态：已连接/已断开
