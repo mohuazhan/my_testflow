@@ -15,7 +15,7 @@ class BaseConfig(object):
 class ProductionConfig(BaseConfig):
     # 设置SQLAlchemy连接数据库
     SQLALCHEMY_DATABASE_URI =\
-    'mysql+mysqlconnector://xiaomo:mhz@2020@!@localhost:3306/auto_dy?charset=utf8mb4'
+    'mysql+mysqlconnector://xiaomo:password@localhost:3306/auto_dy?charset=utf8mb4'
     # 在每次请求结束后自动提交数据库改变
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     # 如果设置成True,将会追踪对象的修改并且发送信号,这需要额外的内存,如果不必要可以禁用它。
