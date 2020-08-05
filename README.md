@@ -1,3 +1,11 @@
+<p align="center">
+
+  <a href="#"><img alt="Python" src="https://img.shields.io/static/v1?label=python&message=3.6&color=blue"></a>
+  <a href="#"><img alt="FastApi" src="https://img.shields.io/static/v1?label=FastApi&message=>1.0&color=red"></a>
+  <a href="#"><img alt="Airtest" src="https://img.shields.io/static/v1?label=Airtest&message=>1.0&color=red"></a>
+
+</p>
+
 # 抖音自动化测试项目
 
 ## 项目备注
